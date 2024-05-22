@@ -1,10 +1,11 @@
+import modulo from './modulo';
 const express = require('express');
 const cors = require('cors');
 const app = express();
 
 // Permitir apenas uma origem específica
 const corsOptions = {
-  origin: 'https://loja-virtual-plum.vercel.app/', // URL do seu frontend
+  origin: 'https://loja-virtual-plum.vercel.app', // URL do seu frontend
   optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
