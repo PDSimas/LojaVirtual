@@ -1,0 +1,104 @@
+* {
+  font-family: "Press Start 2P", system-ui;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(93, 4, 217, 1) 32%, rgba(3, 49, 140, 1) 86%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2em;
+  margin-left: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.message {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btn {
+  padding: 15px 30px;
+  background-color: #00bfff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0080ff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5em;
+  }
+
+  .message {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    padding: 12px 25px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2em;
+  }
+
+  .message {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.8em;
+  }
+}
